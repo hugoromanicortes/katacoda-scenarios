@@ -1,0 +1,32 @@
+{
+  "title": "Kubernetes DevOps",
+  "description": "Kubernetes DevOps with Package Manager and Operators",
+  "difficulty": "medium",
+  "time": "10 minutes",
+  "details": {
+    "steps": [
+	    {
+	      "title": "Step 1 - Launch Kubernetes Cluster",
+	      "text": "step1.md"
+	    },
+	    {
+	      "title": "Step 2 - Deploy Helm",
+	      "text": "step2.md"
+	    }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "kubernetes"
+  }
+}
