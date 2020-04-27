@@ -6,11 +6,11 @@
   "details": {
     "steps": [
 	    {
-	      "title": "Step 1 - Launch Kubernetes Cluster",
+	      "title": "Step 1 - Init Kubernetes Cluster",
 	      "text": "step1.md"
 	    },
 	    {
-	      "title": "Step 2 - Deploy Helm",
+	      "title": "Step 2 - Install Helm",
 	      "text": "step2.md"
 	    }
     ],
@@ -24,7 +24,8 @@
     "assets": {
       "host01": [
       	{"file": "k8s/dashboard.yaml", "target": "/root"},
-      	{"file": "k8s/init.sh", "target": "/root"}
+      	{"file": "k8s/init-k8s.sh", "target": "/root"},
+      	{"file": "helm/get-helm3.sh", "target": "/root"}
       ]
     }
   },

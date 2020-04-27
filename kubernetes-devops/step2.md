@@ -2,6 +2,6 @@ Install Helm.
 
 ## Install Helm
 
-This is an _example_ of creating a scenario and running a **command**
+The command below will initialise Helm 3 on the cluster.
 
-`minikube start`{{execute}}
+`chmod +x get-helm3.sh & bash get-helm3.sh`{{execute HOST1}}
