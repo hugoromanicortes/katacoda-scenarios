@@ -23,7 +23,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "k8s/dashboard.yaml", "target": "/root"}, {"file": "k8s/init.sh", "target": "/root"}]
+      "host01": [{"file": "k8s/dashboard.yaml", "target": "/root"},{"file": "k8s/init.sh", "target": "/root"}]
     }
   },
   "environment": {
