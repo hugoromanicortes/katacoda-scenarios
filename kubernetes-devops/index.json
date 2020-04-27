@@ -16,18 +16,18 @@
     ],
     "intro": {
       "text": "intro.md",
-      "courseData": "courseBase.sh",
+      "courseData": "",
       "credits": ""
     },
     "finish": {
       "text": "finish.md"
     },
     "assets": {
-      "host01": [{"file": "k8s/dashboard.yaml", "target": "/root"}]
+      "host01": [{"file": "k8s/dashboard.yaml", "target": "/root"},{"file": "k8s/init-k8s.sh", "target": "/root"}]
     }
   },
   "environment": {
-    "uilayout": "terminal-terminal",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal. A safe place to learn and execute commands.\u001b[m\r\n"
   },
   "backend": {
