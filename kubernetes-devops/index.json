@@ -23,8 +23,7 @@
     },
     "assets": {
       "host01": [
-      	{"file": "k8s/dashboard.yaml", "target": "/root"},
-      	{"file": "helm/get-helm3.sh", "target": "/root"}
+      	{"file": "k8s/dashboard.yaml", "target": "/root"}
       ]
     }
   },
