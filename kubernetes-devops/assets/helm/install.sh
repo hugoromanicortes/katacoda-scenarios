@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
-curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
-chmod 700 get_helm.sh
-./get_helm.sh
+#!/usr/bash
+curl -fsSL -o get_helm.sh "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
+
+if [ -f ./get_helm.sh ]; then
+	chmod 700 get_helm.sh
+	./get_helm.sh
+fi
