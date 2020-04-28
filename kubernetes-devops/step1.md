@@ -1,24 +1,7 @@
-Initialize a K8S cluster.
+Sanity checks K8S cluster.
 
-## Init Cluster
+## Sanity Cheks
 
-The command below will initialise the cluster with a known token to simplify the following steps.
-
-`chmod +x init-k8s.sh & bash init-k8s.sh`{{execute HOST1}}
-
-## Add worker
-Once the Master has initialized, additional nodes can join the cluster as long as they have the correct token. The tokens can be managed via kubeadm token, for example kubeadm token list{{execute}}.
-
-One the second node, run the command to join the cluster providing the IP address of the Master node.
-
-`kubeadm join --discovery-token-unsafe-skip-ca-verification --token=102952.1a7dd4cc8d1f4cc5 [[HOST_IP]]:6443`{{execute HOST2}}
-
-This is the same command provided after the Master has been initialized.
-
-## Explore
-
-The Kubernetes CLI, known as _kubectl_, can now use the configuration to access the cluster. For example, the command below will return the two nodes in our cluster.
+The Kubernetes cluster is automatically set up for you. You have a master and a worder (node01).
 
 `kubectl get nodes`{{execute HOST1}}
-
-At this point, the Nodes may not be ready. This is because the Container Network Interface has not been deployed. This will be fixed within the next step.
