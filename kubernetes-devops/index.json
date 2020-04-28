@@ -6,12 +6,20 @@
   "details": {
     "steps": [
 	    {
-	      "title": "Step 1 - Init Kubernetes Cluster",
+	      "title": "Step 1 - Kubernetes sanity checks",
 	      "text": "step1.md"
 	    },
 	    {
 	      "title": "Step 2 - Install Helm",
 	      "text": "step2.md"
+	    },
+	    {
+	      "title": "Step 3 - Kafka Helm chart",
+	      "text": "step3.md"
+	    },
+	    {
+	      "title": "Step 4 - PostgresSQL Operator",
+	      "text": "step4.md"
 	    }
     ],
     "intro": {
