@@ -1,5 +1,4 @@
 #!/usr/bash
-
 curl -fsSL -o get_helm.sh "https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3"
 
 if [ -f ./get_helm.sh ]; then
