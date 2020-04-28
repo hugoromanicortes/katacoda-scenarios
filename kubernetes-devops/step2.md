@@ -4,4 +4,4 @@ Install Helm.
 
 The command below will initialise Helm 3 on the cluster.
 
-`chmod +x get-helm3.sh & bash get-helm3.sh`{{execute HOST1}}
+`curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 & chmod 700 get_helm.sh & ./get_helm.sh`{{execute HOST1}}
