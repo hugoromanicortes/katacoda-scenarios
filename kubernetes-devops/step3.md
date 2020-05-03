@@ -19,7 +19,12 @@ Add incubator repository:
 `helm repo add incubator https://kubernetes-charts-incubator.storage.googleapis.com`{{execute HOST1}}
 
 ### Step 3 - Install kafka
-`helm install kafka-cluster --namespace kafka incubator/kafka`{{execute HOST1}} 
+`helm install kafka-cluster --namespace kafka incubator/kafka`{{execute HOST1}}
+`kubectl get pods -n kafka --set persistence.storageClass=local-storage`{{execute HOST1}}
  
 ### Step 4 - Install kafka-manager
-`helm install kafka-manager --namespace kafka  stable/kafka-manager`{{execute HOST1}}
+`helm install kafka-manager --namespace kafka  stable/kafka-manager --set ingress.enabled=true`{{execute HOST1}}
+`kubectl get pods -n kafka`{{execute HOST1}}
+
+export POD_NAME=$(kubectl get pods --namespace kafka -l "app=kafka-manager,release=kafka-manager" -o jsonpath="{.items[0].metadata.name}")
+kubectl port-forward $POD_NAME 8080:9000 -n kafka
