@@ -32,6 +32,7 @@
     "assets": {
       "host01": [
       	{"file": "k8s/dashboard.yaml", "target": "/root/k8s"},
+      	{"file": "k8s/kafka/kafka-pod.yaml", "target": "/root/k8s/kafka"},
       	{"file": "helm/install.sh", "target": "/root/helm"}
       ]
     }
