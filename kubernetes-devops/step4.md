@@ -28,6 +28,6 @@ Kubernetes Universal Declarative Operator (KUDO) provides a declarative approach
 
 ## Init Kudo
 
-Init Kudo on our running cluster:
+Init Kudo on your running cluster:
 
 `kubectl kudo init`{{execute HOST1}}

@@ -15,7 +15,7 @@ Create a dedicated Kubernetes namespace:
 
 Chek zookeeper plan:
 
-`kubectl kudo plan status --instance=zk-kudo-instance`{{execute HOST1}}
+`kubectl kudo plan status --instance=zk-kudo-instance -n kafka-kudo`{{execute HOST1}}
 
 ### Step 3 - Install Kafka
 
@@ -23,4 +23,4 @@ Chek zookeeper plan:
 
 Chek kafka plan:
 
-`kubectl kudo plan status --instance=zk-kudo-instance`{{execute HOST1}}
+`kubectl kudo plan status --instance=zk-kudo-instance -n kafka-kudo`{{execute HOST1}}
