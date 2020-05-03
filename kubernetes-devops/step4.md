@@ -22,6 +22,12 @@ Kubernetes Universal Declarative Operator (KUDO) provides a declarative approach
 
 `chmod +x install.sh | bash install.sh`{{execute HOST1}}
 
+## Chek install
+
+`kubectl kudo --version`{{execute HOST1}}
+
+## Init Kudo
+
 Init Kudo on our running cluster:
 
 `kubectl kudo init`{{execute HOST1}}
