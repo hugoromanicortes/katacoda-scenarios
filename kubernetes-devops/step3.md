@@ -12,7 +12,7 @@ Create a dedicated Kubernetes namespace:
 ### Step 2 - Allow repositories
 In order to allow your Helm client to look for charts, we need to enable repositories. For this scenario kafka is in incubator state and kafka-manager is in stable state.
 
-Add stable repository
+Add stable repository:
 `helm repo add stable https://kubernetes-charts.storage.googleapis.com`{{execute HOST1}}
 
 Add incubator repository:
