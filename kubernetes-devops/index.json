@@ -10,7 +10,7 @@
 	      "text": "step1.md"
 	    },
 	    {
-	      "title": "Step 2 - Install Helm",
+	      "title": "Step 2 - Helm configuration",
 	      "text": "step2.md"
 	    },
 	    {
@@ -18,7 +18,11 @@
 	      "text": "step3.md"
 	    },
 	    {
-	      "title": "Step 4 - PostgresSQL Operator",
+	      "title": "Step 4 - Kudo configuration",
+	      "text": "step4.md"
+	    },
+	    {
+	      "title": "Step 5 - Postgresql operator",
 	      "text": "step4.md"
 	    }
     ],
@@ -34,7 +38,8 @@
       	{"file": "k8s/dashboard.yaml", "target": "/root/k8s"},
       	{"file": "k8s/storage-class.yaml", "target": "/root/k8s"},
       	{"file": "k8s/kafka/kafka-pod.yaml", "target": "/root/k8s/kafka"},
-      	{"file": "helm/install.sh", "target": "/root/helm"}
+      	{"file": "helm/install.sh", "target": "/root/helm"},
+      	{"file": "kudo/install.sh", "target": "/root/kudo"}
       ]
     }
   },

@@ -18,8 +18,10 @@ Kubernetes Universal Declarative Operator (KUDO) provides a declarative approach
 
 ## Install Kudo
 
-### Step 1 - Download release
-
 `cd ../kudo`{{execute HOST1}}
 
 `bash install.sh`{{execute HOST1}}
+
+Once you have a running cluster with kubectl installed along with the KUDO CLI plugin, you can install KUDO like so:
+
+`kubectl kudo init`{{execute HOST1}}

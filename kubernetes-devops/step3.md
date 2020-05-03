@@ -32,3 +32,5 @@ Get pods:
 
 export POD_NAME=$(kubectl get pods --namespace kafka -l "app=kafka-manager,release=kafka-manager" -o jsonpath="{.items[0].metadata.name}")
 kubectl port-forward $POD_NAME 8080:9000 -n kafka
+
+## Clean environment
