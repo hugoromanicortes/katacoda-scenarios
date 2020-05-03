@@ -35,4 +35,10 @@ Helm 2.x comes pre-installed on these instances, however we want to use the vers
 
 `cd helm`{{execute HOST1}}
 
+`helm version`{{execute HOST1}}
+
 `chmod +x install.sh | bash install.sh`{{execute HOST1}}
+
+`helm version`{{execute HOST1}}
+
+
