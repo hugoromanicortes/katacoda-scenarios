@@ -7,13 +7,15 @@ Helm is a tool for managing Kubernetes packages called charts. Helm can do the f
  
 For Helm, there are three important concepts:
 
-1) The chart is a bundle of information necessary to create an instance of a Kubernetes application. 
-2) The config contains configuration information that can be merged into a packaged chart to create a releasable object.
-3) A release is a running instance of a chart, combined with a specific config.
+1) The **chart** is a bundle of information necessary to create an instance of a Kubernetes application.
+
+2) The **config** contains configuration information that can be merged into a packaged chart to create a releasable object.
+
+3) A **release** is a running instance of a chart, combined with a specific config.
  
 Helm is an executable which is implemented into two distinct parts:
 
-The Helm Client is a command-line client for end users. The client is responsible for the following:
+The **Helm Client** is a command-line client for end users. The client is responsible for the following:
  - Local chart development
  - Managing repositories
  - Managing releases
@@ -21,7 +23,7 @@ The Helm Client is a command-line client for end users. The client is responsibl
      - Sending charts to be installed
      - Requesting upgrading or uninstalling of existing releases
      
-The Helm Library provides the logic for executing all Helm operations. It interfaces with the Kubernetes API server and provides the following capability:
+The **Helm Library** provides the logic for executing all Helm operations. It interfaces with the Kubernetes API server and provides the following capability:
  - Combining a chart and configuration to build a release
  - Installing charts into Kubernetes, and providing the subsequent release object
  - Upgrading and uninstalling charts by interacting with Kubernetes
@@ -32,8 +34,8 @@ The standalone Helm library encapsulates the Helm logic so that it can be levera
 
 ## Install Helm
 
-Helm 2.x comes pre-installed on these instances, otherwise we want to use the version 3 of Helm for this demo.
+Helm 2.x comes pre-installed on these instances, however we want to use the version 3 of Helm for this demo.
 
 `cd helm`{{execute HOST1}}
 
-`install.sh`{{execute HOST1}}
+`chmod +x install.sh | -`{{execute HOST1}}
