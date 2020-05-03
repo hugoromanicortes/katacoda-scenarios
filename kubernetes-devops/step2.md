@@ -6,12 +6,9 @@ Helm is a tool for managing Kubernetes packages called charts. Helm can do the f
  - Manage the release cycle of charts that have been installed with Helm
  
 For Helm, there are three important concepts:
-
-1) The **chart** is a bundle of information necessary to create an instance of a Kubernetes application.
-
-2) The **config** contains configuration information that can be merged into a packaged chart to create a releasable object.
-
-3) A **release** is a running instance of a chart, combined with a specific config.
+ - The **chart** is a bundle of information necessary to create an instance of a Kubernetes application.
+ - The **config** contains configuration information that can be merged into a packaged chart to create a releasable object.
+ - A **release** is a running instance of a chart, combined with a specific config.
  
 Helm is an executable which is implemented into two distinct parts:
 
@@ -38,4 +35,4 @@ Helm 2.x comes pre-installed on these instances, however we want to use the vers
 
 `cd helm`{{execute HOST1}}
 
-`chmod +x install.sh | -`{{execute HOST1}}
+`chmod +x install.sh | bash install.sh`{{execute HOST1}}
