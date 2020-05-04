@@ -27,7 +27,7 @@ The **Helm Library** provides the logic for executing all Helm operations. It in
  
 The standalone Helm library encapsulates the Helm logic so that it can be leveraged by different clients.
 
-![Helm 3 Architecture](/hugoromanicortes/katacoda-scenarios/tree/master/kubernetes-devops/assets/helm/helm3-architecture.png)
+![Helm 3 Architecture](/katacoda-scenarios/tree/master/kubernetes-devops/assets/helm/helm3-architecture.png)
 
 ## Install Helm
 
